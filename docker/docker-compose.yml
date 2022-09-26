@@ -5,8 +5,8 @@ networks:
 
 services:
   database:
-    build:
-      context: ./database
+    image: mysql
+    restart: always
     environment:
       - MYSQL_DATABASE=${DATABASE_NAME}
       - MYSQL_USER=${DATABASE_USER}
@@ -14,9 +14,6 @@ services:
       - MYSQL_ROOT_PASSWORD=${DATABASE_ROOT_PASSWORD}
     ports:
       - "3306:3306"
-    volumes:
-      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
-      - ./database/data:/var/lib/mysql
     networks:
       - mynet
 
