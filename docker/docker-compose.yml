@@ -50,4 +50,3 @@ services:
     environment:
       PMA_HOST: database
       PMA_PORT: 3306
-      MYSQL_ROOT_PASSWORD: MYSQL_ROOT_PASSWORD=${DATABASE_ROOT_PASSWORD}
