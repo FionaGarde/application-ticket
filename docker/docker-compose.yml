@@ -42,4 +42,12 @@ services:
       - "80:80"
       - "443:443"
 
-
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: database
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: MYSQL_ROOT_PASSWORD=${DATABASE_ROOT_PASSWORD}
