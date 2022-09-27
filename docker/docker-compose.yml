@@ -13,7 +13,13 @@ services:
       - "3306:3306"
     volumes:
       - ./database/data:/var/lib/mysql
-
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
   php-fpm:
     build:
       context: ./php-fpm
