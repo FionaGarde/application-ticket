@@ -1,0 +1,6 @@
+172.22.0.1 - - [26/Sep/2022:14:09:41 +0000] "GET / HTTP/1.1" 404 32091 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+172.22.0.1 - - [26/Sep/2022:14:09:42 +0000] "GET /favicon.ico HTTP/1.1" 404 181817 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+172.22.0.1 - - [26/Sep/2022:14:11:29 +0000] "GET / HTTP/1.1" 404 32091 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+172.22.0.1 - - [26/Sep/2022:14:11:30 +0000] "GET / HTTP/1.1" 404 32091 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+172.22.0.1 - - [26/Sep/2022:14:23:21 +0000] "GET / HTTP/1.1" 404 32091 "-" "Avast Antivirus"
+172.22.0.1 - - [26/Sep/2022:14:23:24 +0000] "GET /HNAP1/ HTTP/1.1" 404 181599 "-" "Avast Antivirus"
