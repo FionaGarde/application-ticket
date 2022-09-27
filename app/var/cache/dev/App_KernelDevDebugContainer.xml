@@ -1562,12 +1562,258 @@
         <argument key="cache_dir">/var/www/var/cache/dev/translations</argument>
         <argument key="debug">true</argument>
         <argument key="resource_files" type="collection">
+          <argument key="af" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.af.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.af.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.af.xlf</argument>
+          </argument>
+          <argument key="ar" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.ar.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.ar.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.ar.xlf</argument>
+          </argument>
+          <argument key="az" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.az.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.az.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.az.xlf</argument>
+          </argument>
+          <argument key="be" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.be.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.be.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.be.xlf</argument>
+          </argument>
+          <argument key="bg" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.bg.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.bg.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.bg.xlf</argument>
+          </argument>
+          <argument key="bs" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.bs.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.bs.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.bs.xlf</argument>
+          </argument>
+          <argument key="ca" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.ca.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.ca.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.ca.xlf</argument>
+          </argument>
+          <argument key="cs" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.cs.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.cs.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.cs.xlf</argument>
+          </argument>
+          <argument key="cy" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.cy.xlf</argument>
+          </argument>
+          <argument key="da" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.da.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.da.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.da.xlf</argument>
+          </argument>
+          <argument key="de" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.de.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.de.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.de.xlf</argument>
+          </argument>
+          <argument key="el" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.el.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.el.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.el.xlf</argument>
+          </argument>
+          <argument key="en" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.en.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.en.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.en.xlf</argument>
+          </argument>
+          <argument key="es" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.es.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.es.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.es.xlf</argument>
+          </argument>
+          <argument key="et" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.et.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.et.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.et.xlf</argument>
+          </argument>
+          <argument key="eu" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.eu.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.eu.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.eu.xlf</argument>
+          </argument>
+          <argument key="fa" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.fa.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.fa.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.fa.xlf</argument>
+          </argument>
+          <argument key="fi" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.fi.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.fi.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.fi.xlf</argument>
+          </argument>
+          <argument key="fr" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.fr.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.fr.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.fr.xlf</argument>
+          </argument>
+          <argument key="gl" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.gl.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.gl.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.gl.xlf</argument>
+          </argument>
+          <argument key="he" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.he.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.he.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.he.xlf</argument>
+          </argument>
+          <argument key="hr" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.hr.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.hr.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.hr.xlf</argument>
+          </argument>
+          <argument key="hu" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.hu.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.hu.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.hu.xlf</argument>
+          </argument>
+          <argument key="hy" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.hy.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.hy.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.hy.xlf</argument>
+          </argument>
+          <argument key="id" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.id.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.id.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.id.xlf</argument>
+          </argument>
+          <argument key="it" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.it.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.it.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.it.xlf</argument>
+          </argument>
+          <argument key="ja" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.ja.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.ja.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.ja.xlf</argument>
+          </argument>
+          <argument key="lb" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.lb.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.lb.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.lb.xlf</argument>
+          </argument>
+          <argument key="lt" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.lt.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.lt.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.lt.xlf</argument>
+          </argument>
+          <argument key="lv" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.lv.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.lv.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.lv.xlf</argument>
+          </argument>
+          <argument key="mn" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.mn.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.mn.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.mn.xlf</argument>
+          </argument>
+          <argument key="my" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.my.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.my.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.my.xlf</argument>
+          </argument>
+          <argument key="nb" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.nb.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.nb.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.nb.xlf</argument>
+          </argument>
+          <argument key="nl" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.nl.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.nl.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.nl.xlf</argument>
+          </argument>
+          <argument key="nn" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.nn.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.nn.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.nn.xlf</argument>
+          </argument>
+          <argument key="no" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.no.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.no.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.no.xlf</argument>
+          </argument>
+          <argument key="pl" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.pl.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.pl.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.pl.xlf</argument>
+          </argument>
+          <argument key="pt" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.pt.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.pt.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.pt.xlf</argument>
+          </argument>
+          <argument key="pt_BR" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.pt_BR.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.pt_BR.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.pt_BR.xlf</argument>
+          </argument>
+          <argument key="ro" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.ro.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.ro.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.ro.xlf</argument>
+          </argument>
+          <argument key="ru" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.ru.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.ru.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.ru.xlf</argument>
+          </argument>
+          <argument key="sk" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.sk.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.sk.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.sk.xlf</argument>
+          </argument>
+          <argument key="sl" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.sl.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.sl.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.sl.xlf</argument>
+          </argument>
+          <argument key="sq" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.sq.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.sq.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.sq.xlf</argument>
+          </argument>
+          <argument key="sr_Cyrl" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.sr_Cyrl.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.sr_Cyrl.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.sr_Cyrl.xlf</argument>
+          </argument>
+          <argument key="sr_Latn" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.sr_Latn.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.sr_Latn.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.sr_Latn.xlf</argument>
+          </argument>
+          <argument key="sv" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.sv.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.sv.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.sv.xlf</argument>
+          </argument>
+          <argument key="th" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.th.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.th.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.th.xlf</argument>
+          </argument>
+          <argument key="tl" type="collection">
+            <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.tl.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.tl.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.tl.xlf</argument>
+          </argument>
           <argument key="tr" type="collection">
             <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.tr.xlf</argument>
+            <argument>/var/www/vendor/symfony/form/Resources/translations/validators.tr.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.tr.xlf</argument>
           </argument>
           <argument key="uk" type="collection">
             <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.uk.xlf</argument>
             <argument>/var/www/vendor/symfony/form/Resources/translations/validators.uk.xlf</argument>
+            <argument>/var/www/vendor/symfony/security-core/Resources/translations/security.uk.xlf</argument>
           </argument>
           <argument key="uz" type="collection">
             <argument>/var/www/vendor/symfony/validator/Resources/translations/validators.uz.xlf</argument>
