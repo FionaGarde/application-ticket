@@ -1,3 +1,111 @@
-body{
-    background-color: red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+height: 100%;
+width: 100%;
+
+background: linear-gradient(180deg, #FEDCDC 62.14%, rgba(217, 217, 217, 0) 100%);
+background:no-repeat;
+}
+.header {
+    height: 78px;
+}
+.footer {
+    height: 78px;
+}
+.main-card .top-logo img {
+
+width: 201px;
+height: 73px;
+left: 619px;
+top: 144px;
+}
+.main-card .top-logo {
+    top: 50px;
+    position: relative;
+}
+.main-card .candy-logo {
+    position: relative;
+    display: flex;
+    top: 90px;
+}
+.main-card .candy-logo img {
+    width: 100px;
+height: 100px;
+left: 647px;
+top: 167px;
+}
+
+.main-card {
+
+    width: 645px;
+    height: 839px;
+    left: 790px;
+    top: 78px;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+  
+   align-items: center;
+   flex-direction: column;
+   
+    background: #FFEDED;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 25px;
+}
+h1 {
+    top: 150px;
+    display: flex;
+    position: relative;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.p1 {
+    top: 200px;
+    display: flex;
+    position: relative;
+    font-family: Lato;
+    font-size: 18px;
+    max-width: 450px;
+   text-align: center;
+}
+.p2 {
+    top: 250px;
+    display: flex;
+    position: relative;
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+}
+button {
+    top: 350px;
+    display: flex;
+    position: relative;
+    align-items: center;
+border-radius: 11px;
+font-family: 'Lato';
+font-style: normal;
+
+font-size: 14px;
+line-height: 18px;
+height: 50px;
+width: 270px;
+border:none;
+color: #ffffff;
+font-weight: 600;
+
+background-color: #ff5959;
+box-shadow: #ff9999 0px 0px 10px;
+text-transform: uppercase;
 }
