@@ -6,15 +6,14 @@
 }
 
 body {
-height: 100%;
-width: 100%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(180deg, #FEDCDC 62.14%, rgba(217, 217, 217, 0) 100%);
+    flex-direction: row;
+    align-items: center;
+}
 
-background: linear-gradient(180deg, #FEDCDC 62.14%, rgba(217, 217, 217, 0) 100%);
-background:no-repeat;
-}
-.header {
-    height: 78px;
-}
 .footer {
     height: 78px;
 }
@@ -27,14 +26,22 @@ top: 144px;
 }
 .main-card .top-logo {
     top: 50px;
-    position: relative;
-}
-.main-card .candy-logo {
-    position: relative;
     display: flex;
-    top: 90px;
+    flex-direction: column;
+   align-items: center;
+   padding-top: 2%;
+   padding-bottom: 2%;
+   gap: 50px;
 }
-.main-card .candy-logo img {
+.main-card .texte {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.main-card .top-logo .candy {
     width: 100px;
 height: 100px;
 left: 647px;
@@ -42,15 +49,10 @@ top: 167px;
 }
 
 .main-card {
-
-    width: 645px;
-    height: 839px;
-    left: 790px;
-    top: 78px;
     margin: 0 auto;
     border-radius: 10px;
     display: flex;
-  
+padding: 70px 70px 70px 70px;
    align-items: center;
    flex-direction: column;
    
@@ -58,40 +60,44 @@ top: 167px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 25px;
 }
+button {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
 h1 {
-    top: 150px;
+  
     display: flex;
-    position: relative;
+
     font-family: Lato;
     font-size: 20px;
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     
 }
 .p1 {
-    top: 200px;
+ 
     display: flex;
-    position: relative;
+  
     font-family: Lato;
     font-size: 18px;
     max-width: 450px;
    text-align: center;
 }
 .p2 {
-    top: 250px;
+
     display: flex;
-    position: relative;
+  
     font-family: 'Lato';
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
 }
 button {
-    top: 350px;
+
     display: flex;
-    position: relative;
+
     align-items: center;
 border-radius: 11px;
 font-family: 'Lato';
