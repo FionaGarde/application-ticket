@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello LoginController!{% endblock %}
+
+{% block body %}
+    {% if error %}
+        <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+    <h1> Connexion </h1>
+
+    <div class="container-fluid border w-50">
+
+        <form class="row justify-content-center" action="{{ path('app_login') }}" method="post">
+            <div class="col-md-6">
+                <label for="username">Mail</label>
+                <input class="form-control" type="text" id="username" name="_username" value="{{ last_username }}"/>
+            </div>
+            <div class="col-md-6">
+                <label for="password">Mot de passe</label>
+                <input class="form-control" type="password" id="password" name="_password"/>
+            </div>
+
+            {# If you want to control the URL the user is redirected to on success
+        <input type="hidden" name="_target_path" value="/account"/> #}
+            <input type="hidden" name="_target_path" value="/"/>
+
+            <button class="w-25 m-5 btn btn-primary" type="submit">Connexion</button>
+        </form>
+    </div>
+
+{% endblock %}
