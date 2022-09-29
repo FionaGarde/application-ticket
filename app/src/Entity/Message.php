@@ -17,6 +17,9 @@ class Message
     #[ORM\Column(type: Types::TEXT)]
     private ?string $content = null;
 
+    // 1: à modérer
+    // 2: validé
+    // 3: refusé / à modifier
     #[ORM\Column]
     private ?int $state = null;
 
@@ -32,6 +35,10 @@ class Message
     #[ORM\ManyToOne(inversedBy: 'receivedMessages')]
     private ?User $receiver = null;
 
+    public function __construct()
+    {
+        $this->createdAt = new \DateTime();
+    }
 
     public function getId(): ?int
     {
@@ -121,4 +128,3 @@ class Message
     }
    
 }
-// Todo : refaire la relation "receive" User 
