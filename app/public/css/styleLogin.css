@@ -1,0 +1,60 @@
+body {
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(
+    180deg,
+    #fedcdc 62.14%,
+    rgba(217, 217, 217, 0) 100%
+  );
+  flex-direction: row;
+  align-items: center;
+}
+form {
+    display: contents;
+}
+.main-card {
+  margin: 0 auto;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  padding: 20px 20px 20px 20px;
+  align-items: center;
+  flex-direction: column;
+
+  background: #ffeded;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+img {
+  width: 25%;
+}
+.main-card .candy-logo {
+  top: -90px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .main-card {
+    width: 80%;
+  }
+}
