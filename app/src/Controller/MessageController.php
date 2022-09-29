@@ -32,7 +32,7 @@ class MessageController extends AbstractController
     }
 
     #[Route('/new', name: 'new')]
-    public function index(EntityManagerInterface $entityManager, Request $request): Response
+    public function new(EntityManagerInterface $entityManager, Request $request): Response
     {
         $message = new Message();
 
