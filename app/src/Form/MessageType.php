@@ -8,6 +8,8 @@ use Doctrine\ORM\EntityRepository;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\Form\FormEvent;
+use Symfony\Component\Form\FormEvents;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 
@@ -36,7 +38,19 @@ class MessageType extends AbstractType
                         ->where('u.mail != :mail')
                         ->setParameter('mail', $connectedUser->getMail());
                 }
-            ]);
+            ])
+
+            // ici on veut enlever le champ receiver si on est en train de modifier un message
+            ->addEventListener(FormEvents::PRE_SET_DATA, function (FormEvent $formEvent) {
+                $form = $formEvent->getForm();
+                $message = $formEvent->getData();
+
+                if (!$message) {
+                    return;
+                }
+
+                $form->remove('receiver');
+            });
     }
 
     public function configureOptions(OptionsResolver $resolver): void

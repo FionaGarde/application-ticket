@@ -92,6 +92,7 @@ class MessageController extends AbstractController
             if ($form->isSubmitted() && $form->isValid()) {
                 $sendedMessage->setUpdatedAt(new \DateTime());
                 $sendedMessage->setState(1);
+
                 $entityManager->flush();
 
                 $this->addFlash('success', "Message correctement modifié =] !");
