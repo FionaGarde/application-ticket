@@ -14,14 +14,14 @@ body {
   background-repeat: no-repeat;
 }
 
-.container-canvas{
-    position: absolute;
-    overflow: hidden;
-    pointer-events: none;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
+.container-canvas {
+  position: absolute;
+  overflow: hidden;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
 }
 
 .main-card {
