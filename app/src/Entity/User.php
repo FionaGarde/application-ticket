@@ -20,21 +20,22 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\GeneratedValue]
     #[ORM\Column]
     private ?int $id = null;
-
+    
+    #[Assert\NotBlank (message:'Le champ Email est obligatoire')]
     #[ORM\Column(length: 180, unique: true)]
     #[Assert\Regex(
-        pattern: "/my-digital-school.[a-z]{2,3}/",
-        match: false,
-        message: 'Votre adresse mail doit terminer par my-digital-school.org ',
+        pattern: "/@my-digital-school.org[a-z]{2,3}/",
+        match: true,
+        message: 'Votre adresse mail doit terminer par @my-digital-school.org',
     )]
     private ?string $email = null;
-
     #[ORM\Column]
     private array $roles = [];
 
     /**
      * @var string The hashed password
      */
+    #[Assert\NotBlank]
     #[ORM\Column]
     private ?string $password = null;
 
