@@ -52,3 +52,35 @@ font-weight: bolder!important;
     border-bottom: solid 2px rgba(244, 237, 244)!important;
     transition: ease 0.4s!important;
 }   
+
+
+/*Changement de la barre de scrol*/
+
+body::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(121, 27, 121)!important; /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(121, 27, 121)!important;
+
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid rgba(121, 27, 121,0.5)!important; /* creates padding around scroll thumb */
+  }
+  
+
+  .burger{
+
+    color: white!important;
+}
+
+.burgerout{
+
+    color: white!important;
+    border-radius: 50%!important;
+    height: 42px!important;
+    border: solid 1px white!important;
+}
