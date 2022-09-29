@@ -18,7 +18,7 @@ class AdminController extends AbstractController
             'controller_name' => 'AdminController',
         ]);
     }
-    
+
     #[Route('/validated/{id}', name: 'validate')]
     public function validateMessage(EntityManagerInterface $entityManager, Message $message): Response
     {
