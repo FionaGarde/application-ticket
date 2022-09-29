@@ -29,6 +29,10 @@ class Classroom
         $this->students = new ArrayCollection();
     }
 
+    public function __toString(): string
+    {
+        return $this->getLevel() . ' ' . $this->getTitle();
+    }
 
     public function getId(): ?int
     {
