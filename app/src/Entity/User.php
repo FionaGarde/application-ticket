@@ -20,7 +20,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\Column(length: 180, unique: true)]
     #[Assert\Regex(
-        pattern: 'my-digital-school.[a-z]{2,3}',
+        pattern: "/my-digital-school.[a-z]{2,3}/",
         match: false,
         message: 'Votre adresse mail doit terminer par my-digital-school.org ',
     )]
