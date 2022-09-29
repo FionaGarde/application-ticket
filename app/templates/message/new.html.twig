@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ parent() }} -- Nouveau message
+{% endblock %}
+
+{% block body %}
+    <h1>Nouveau message</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            {{ form_start(newMessageForm) }}
+            {{ form_row(newMessageForm.content, {
+                label: 'Contenu'
+            }) }}
+            {{ form_row(newMessageForm.receiver, {
+                label: 'Destinataire'
+            }) }}
+
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+            {{ form_end(newMessageForm) }}
+        </div>
+    </div>
+{% endblock %}

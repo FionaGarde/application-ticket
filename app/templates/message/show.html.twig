@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ parent() }} -- Ton message
+{% endblock %}
+
+{% block body %}
+    <p>Voici ton message : {{ message.content }}</p>
+{% endblock %}
