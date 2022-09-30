@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - Modifier un message
+{% endblock %}
+
+{% block body %}
+    <h1>Modifier un message</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            {{ form_start(messageForm) }}
+            {{ form_row(messageForm.content, {
+                label: 'Contenu'
+            }) }}
+
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+            {{ form_end(messageForm) }}
+        </div>
+    </div>
+{% endblock %}

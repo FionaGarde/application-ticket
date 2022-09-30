@@ -1,0 +1,34 @@
+<nav class="manav navbar navbar-expand-lg p-5 text-center">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img class="img w-75" src="{{asset('images/logo_mds.png')}}" alt="logo"/></a>
+    <button class="burgerout navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="burgerin"><i class="fas fa-bars fa-1x"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+        <li class="nav-item">
+          <a class="lien1 nav-link active" aria-current="page" href="#">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="lien2 nav-link active" href="#">Liste élèves</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Mon compte
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="lien3 dropdown-item" href="#">Connexion</a></li>
+                        <li><hr class="dropdown-divider"></li>
+
+            <li><a class="lien4 dropdown-item" href="#">Déconnexion</a></li>
+          </ul>
+        </li>
+          
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
+        <button class="btn btn btn-outline-light" type="submit">Rechercher</button>
+      </form>
+    </div>
+  </div>
+</nav>

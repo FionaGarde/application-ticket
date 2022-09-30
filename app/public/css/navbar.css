@@ -1,0 +1,86 @@
+@charset "utf-8";
+.manav {
+
+background-color: rgba(121, 27, 121,0.5)!important;
+
+--bs-bg-opacity:0.8 !important;
+border-bottom-right-radius: 5%;
+border-bottom-left-radius: 5%;
+box-shadow: 0px 15px 10px -15px #111!important;
+transition: ease 0.5s;
+font-family: 'Comfortaa', cursive!important;
+font-weight: bolder!important;
+}
+
+
+.lien1{
+    border-bottom: solid 2px rgba(121, 27, 121,0)!important;
+    transition: ease 0.4s!important;
+}   
+
+.lien1:hover{
+    border-bottom: solid 2px rgba(244, 237, 244)!important;
+    transition: ease 0.4s!important;
+}   
+
+.lien2{
+    border-bottom: solid 2px rgba(121, 27, 121,0)!important;
+    transition: ease 0.4s!important;
+}   
+
+.lien2:hover{
+    border-bottom: solid 2px rgba(244, 237, 244)!important;
+    transition: ease 0.4s!important;
+}   
+
+.lien3{
+    border-bottom: solid 2px rgba(121, 27, 121,0)!important;
+    transition: ease 0.4s!important;
+}   
+
+.lien3:hover{
+    border-bottom: solid 2px rgba(244, 237, 244)!important;
+    transition: ease 0.4s!important;
+} 
+
+.lien4{
+    border-bottom: solid 2px rgba(121, 27, 121,0)!important;
+    transition: ease 0.4s!important;
+}   
+
+.lien4:hover{
+    border-bottom: solid 2px rgba(244, 237, 244)!important;
+    transition: ease 0.4s!important;
+}   
+
+
+/*Changement de la barre de scrol*/
+
+body::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(121, 27, 121)!important; /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(121, 27, 121)!important;
+
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid rgba(121, 27, 121,0.5)!important; /* creates padding around scroll thumb */
+  }
+  
+
+  .burger{
+
+    color: white!important;
+}
+
+.burgerout{
+
+    color: white!important;
+    border-radius: 50%!important;
+    height: 42px!important;
+    border: solid 1px white!important;
+}
