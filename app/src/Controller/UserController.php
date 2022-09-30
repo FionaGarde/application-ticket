@@ -20,12 +20,4 @@ class UserController extends AbstractController
         // TODO: préparer la route pour la page qui va lister tous les message à modérer pour l'admin
         // TODO: afficher sur la home le message s'il a déjà envoyé un message et s'il a été validé ou pas, (si non validé possibilité de renvoyer vers la page de modification de message
     }
-
-    #[Route('/', name: 'user_index')]
-    public function index(): Response
-    {
-        return $this->render('user/index.html.twig', [
-            'controller_name' => 'UserController',
-        ]);
-    }
 }

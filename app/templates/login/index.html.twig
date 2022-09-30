@@ -3,12 +3,12 @@
 {% block title %}C'est nouelllllllllllle !{% endblock %}
 
 {% block body %}
-<body class="p-0"style="background-color:#6f42c1
+    <body class="p-0" style="background-color:#6f42c1
 !important;">
-<div class="mt-3">
-<img class="img w25 d-block m-auto" src="{{asset('images/logo_mds.png')}}" alt="logo école">
-</div>
-<div class="connexion container">
+    <div class="mt-3">
+        <img class="img w25 d-block m-auto" src="{{ asset('images/logo_mds.png') }}" alt="logo école">
+    </div>
+    <div class="connexion container">
 
         <!-- Outer Row -->
         <div class="row justify-content-center">
@@ -24,41 +24,32 @@
                                 <div class="p-5">
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Connexion</h1>
-                                         {% if error %}
-                            <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-                        {% endif %}
+                                        {% if error %}
+                                            <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                                        {% endif %}
                                     </div>
                                     <form class="user" action="{{ path('app_login') }}" method="post">
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user"
-                                                id="username" name="_username" aria-describedby="emailHelp"
-                                                placeholder="Entrez votre adresse mail..." value="{{ last_username }}">
+                                                   id="username" name="_username" aria-describedby="emailHelp"
+                                                   placeholder="Entrez votre adresse mail..."
+                                                   value="{{ last_username }}">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                iid="password" name="_password" placeholder="Mot de passe">
+                                                   iid="password" name="_password" placeholder="Mot de passe">
                                             <input type="hidden" name="_target_path" value="/"/>
 
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox small">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck">Ce
-                                                    rappeler de moi</label>
-                                            </div>
                                         </div>
                                         <button class="btn btn-primary btn-user btn-block" type="submit">
                                             Connexion
                                         </button>
 
                                         <hr>
-                                   
-                                        
+
+
                                     </form>
                                     <hr>
-                                    <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Mot de passe oublié?</a>
-                                    </div>
                                     <div class="text-center">
                                         <a class="small" href="{{ path('app_register') }}">Crée un compte !</a>
                                     </div>
