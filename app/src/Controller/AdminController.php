@@ -34,5 +34,33 @@ class AdminController extends AbstractController
         $entityManager->flush();
         return $this->redirectToRoute('admin_home');
     }
+    #[Route('/', name: 'home')]
+    public function userInformations( UserRepository $userRepository, Mesage $message): Response
+    {
+        $users = $userRepository->findAll();
+    
+        return $this->render('admin/index.html.twig', [
+            'users' => $users,
+        ]);
+    }
+    #[Route('/stats', name: 'stats')]
+    public function stats(UserRepository $userRepository, MessageRepository $messageRepository): Response
+    {
+        $users = $userRepository->findAll();
+        $usersCount = count($users);
+        $messagesToModerateCount = count($messagesRepository->findBy(array('state' => '1')));
+        $messagesValidatedCount = count($messagesRepository->findBy(array('state' => '2')));
+        $messagesRefusedCount = count($messagesRepository->findBy(array('state' => '3')));
+        $sendedCount = count($messagesRepository->findAll());
+        
+
+        return $this->render('admin/stats.html.twig', [
+            'messagesToModerateCount' => $messagesToModerateCount,
+            'messagesValidatedCount' => $messagesValidatedCount,
+            'messagesRefusedCount' => $messagesRefusedCount, 
+            'sendedCount' => $sendedCount,
+        ]);
+    }
+    
 
 }
