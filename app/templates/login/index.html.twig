@@ -3,8 +3,11 @@
 {% block title %}C'est nouelllllllllllle !{% endblock %}
 
 {% block body %}
-<body style="background-color:#6f42c1
+<body class="p-0"style="background-color:#6f42c1
 !important;">
+<div class="mt-3">
+<img class="img w25 d-block m-auto" src="{{asset('images/logo_mds.png')}}" alt="logo école">
+</div>
 <div class="connexion container">
 
         <!-- Outer Row -->
@@ -44,9 +47,12 @@
                                                     rappeler de moi</label>
                                             </div>
                                         </div>
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
+                                        <button class="btn btn-primary btn-user btn-block" type="submit">
                                             Connexion
-                                        </a>
+                                        </button>
+                                        <!--<a href="index.html" class="btn btn-primary btn-user btn-block">
+                                            Connexion
+                                        </a>-->
                                         <hr>
                                    
                                         
