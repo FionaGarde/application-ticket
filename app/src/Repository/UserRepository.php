@@ -39,6 +39,15 @@ class UserRepository extends ServiceEntityRepository
         }
     }
 
+    public function findAllWithoutSpecifiedId($id): array
+    {
+        return $this->createQueryBuilder('u')
+            ->andWhere('u.id != :id')
+            ->setParameter('id', $id)
+            ->getQuery()
+            ->getResult();
+    }
+
 //    /**
 //     * @return User[] Returns an array of User objects
 //     */
