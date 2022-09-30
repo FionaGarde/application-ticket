@@ -45,7 +45,7 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Liste -->
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Élèves</span></a>
@@ -65,7 +65,7 @@
             <hr class="sidebar-divider my-0"> 
 
             <!-- Nav Item - Moderate -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="moderate.html">
                     <i class="fas fa-fw fa-shield-alt"></i>
                     <span>Modération</span></a>
@@ -127,42 +127,81 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Liste des Éleves</h1>
-                    <p class="mb-4">Voici tous les élèves inscrit sur l'application.</p>
+                    <h1 class="h3 mb-2 text-gray-800">Liste des Messages</h1>
+                    <p class="mb-4">Voici tous la liste des messages en attente de modération.</p>
 
                     <!-- DataTables -->
-                    <div class="card shadow mb-4">
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>Nom</th>
-                                            <th>Prénom</th>
-                                            <th>Classe</th>
-                                            <th>Intitulé</th>
-                                            <th>E-Mail</th>
-                                            <th>Message(s) reçu(s)</th>
-                                            <th>Message envoyé</th>
-                                        </tr>
-                                    </thead>
-                                    
-                                        <tr>
-                                            <td>Martin</td>
-                                            <td>Jimmy</td>
-                                            <td>B3</td>
-                                            <td>Développeur Web</td>
-                                            <td>jimmy.martin@my-digital-school.org</td>
-                                            <td>2</td>
-                                            <td>1</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                    
+                     <!-- Pending Requests Card Example -->
+                    <div class="col-xl-4 col-md-6 mb-4">
+                        <div class="card border-left-warning shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-sm font-weight-bold text-warning mb-1">
+                                            Joyeux Noël !</div>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <i class="far fa-save text-success" style="padding: 20px;"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <i class="far fa-edit text-danger"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                </div>
+                    <div class="col-xl-4 col-md-6 mb-4">
+                        <div class="card border-left-warning shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-sm font-weight-bold text-warning mb-1">
+                                            Joyeux Noël !</div>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <i class="far fa-save text-success" style="padding: 20px;"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <i class="far fa-edit text-danger"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 mb-4">
+                        <div class="card border-left-warning shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-sm font-weight-bold text-warning mb-1">
+                                            Joyeux Noël !</div>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <i class="far fa-save text-success" style="padding: 20px;"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <i class="far fa-edit text-danger"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 <!-- /.container-fluid -->
 
             </div>
