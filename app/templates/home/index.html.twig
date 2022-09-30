@@ -31,7 +31,7 @@
                         {% endif %}
 
                         <td>
-                            <a href="{{ path('message_new') }}" class="btn btn-primary">Envoyer un message</a>
+                            <a href="{{ path('message_new') }}?id={{ user.id }}" class="btn btn-primary">Envoyer un message</a>
                         </td>
                     </tr>
                 {% endfor %}
