@@ -3,6 +3,8 @@
 namespace App\Controller;
 
 use App\Entity\Message;
+use App\Repository\MessageRepository;
+use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -12,10 +14,12 @@ use Symfony\Component\Routing\Annotation\Route;
 class AdminController extends AbstractController
 {
     #[Route('/', name: 'home')]
-    public function index(): Response
+    public function index(UserRepository $userRepository): Response
     {
+        $users = $userRepository->findAll();
+
         return $this->render('admin/index.html.twig', [
-            'controller_name' => 'AdminController',
+            'users' => $users,
         ]);
     }
 
@@ -34,24 +38,16 @@ class AdminController extends AbstractController
         $entityManager->flush();
         return $this->redirectToRoute('admin_home');
     }
-    #[Route('/', name: 'home')]
-    public function userInformations( UserRepository $userRepository, Mesage $message): Response
-    {
-        $users = $userRepository->findAll();
-    
-        return $this->render('admin/index.html.twig', [
-            'users' => $users,
-        ]);
-    }
+
     #[Route('/stats', name: 'stats')]
     public function stats(UserRepository $userRepository, MessageRepository $messageRepository): Response
     {
         $users = $userRepository->findAll();
         $usersCount = count($users);
-        $messagesToModerateCount = count($messagesRepository->findBy(array('state' => '1')));
-        $messagesValidatedCount = count($messagesRepository->findBy(array('state' => '2')));
-        $messagesRefusedCount = count($messagesRepository->findBy(array('state' => '3')));
-        $sendedCount = count($messagesRepository->findAll());
+        $messagesToModerateCount = count($messageRepository->findBy(array('state' => '1')));
+        $messagesValidatedCount = count($messageRepository->findBy(array('state' => '2')));
+        $messagesRefusedCount = count($messageRepository->findBy(array('state' => '3')));
+        $sendedCount = count($messageRepository->findAll());
         
 
         return $this->render('admin/stats.html.twig', [
