@@ -46,7 +46,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\ManyToOne(inversedBy: 'students')]
     #[ORM\JoinColumn(nullable: true)]
-    private Classroom $room;
+    private ?Classroom $room;
 
     #[ORM\Column(type: 'json')]
     private $roles = [];
